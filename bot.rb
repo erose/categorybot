@@ -1,4 +1,4 @@
-require 'Twitter'
+require 'twitter'
 
 client = Twitter::REST::Client.new do |config|
   config.consumer_key        = ENV['CONSUMER_KEY']
