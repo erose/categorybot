@@ -62,7 +62,7 @@ $adjectives = [
   "friendly"
 ]
 
-def get_category
+def get_tweet
   computed_objects = if rand < 0.5 then "#{$adjectives.sample} #{$objects.sample}" else "#{$objects.sample}" end
   computed_morphisms = if rand < 0.5 then "#{$adjectives.sample} #{$morphisms.sample}" else "#{$morphisms.sample}" end
   [
@@ -71,5 +71,4 @@ def get_category
   ].sample
 end
 
-puts get_category
-# client.update "The category of sets and functions between them."
+client.update get_tweet
