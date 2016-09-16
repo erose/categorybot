@@ -1,10 +1,10 @@
 require 'Twitter'
 
 client = Twitter::REST::Client.new do |config|
-  config.consumer_key        = "exTgxepeUXRy067ku2IlXadGj"
-  config.consumer_secret     = "H0H23CG50JZsIJJ7QYUEAbIJy6D8wFiqaTtzDqiITjnN22fW7g"
-  config.access_token        = "776815249735507968-YRYiSM67A1mpisJSCaIclE7uhm6THJs"
-  config.access_token_secret = "s9mxpalFySa2SxfM3vqxxeGabH2c4Vy9BeKGVeB5hJB3w"
+  config.consumer_key        = ENV['CONSUMER_KEY']
+  config.consumer_secret     = ENV['CONSUMER_SECRET']
+  config.access_token        = ENV['ACCESS_TOKEN']
+  config.access_token_secret = ENV['ACCESS_TOKEN_SECRET']
 end
 
 $objects = [
